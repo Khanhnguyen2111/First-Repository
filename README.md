@@ -29,12 +29,12 @@ SELECT * FROM club_member_info;
 # CHECK THE RESULT:
 SELECT * FROM club_member_info_cleaned;
 # CLEAN DATA:
-AGE: change value > 70:
+Response AGE: change value > 70:
 - UPDATE club_member_info_cleaned
 SET age = 70
 WHERE age >100;
 
-FULL_NAME:
+TRIM full_name:
 - UPDATE club_member_info_cleaned
 SET full_name = TRIM(full_name);
 
