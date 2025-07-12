@@ -33,9 +33,11 @@ AGE: change value > 70:
 - UPDATE club_member_info_cleaned
 SET age = 70
 WHERE age >100;
+
 FULL_NAME:
 - UPDATE club_member_info_cleaned
 SET full_name = TRIM(full_name);
+
 BLANK VALUE in martial_status:
 - UPDATE club_member_info_cleaned
 SET martial_status="married"
